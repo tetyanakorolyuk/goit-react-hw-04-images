@@ -71,7 +71,7 @@ return (
 
   {total >= perPage && <Button onClickButton={loadPageMore} /> }
 
-  {loading && <Loader />}
+  {loading && !error && <Loader />}
 
   {showModal && (
     <Modal onClose={toggleModal}>
